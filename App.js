@@ -7,7 +7,7 @@ import { Profile } from './src/components/LandingPage/Profile';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Profile /> 
+      <SignUp /> 
     </View>
   );
 }
