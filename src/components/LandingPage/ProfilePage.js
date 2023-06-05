@@ -5,6 +5,7 @@ import jowamu from "../images/jowamu.jpg";
 import { Feather } from '@expo/vector-icons';
 import { Review } from './Review';
 import { ProfileIcons } from './ProfileIcons';
+import { FontAwesome } from '@expo/vector-icons'; 
 
 export const ProfilePage = () => {
   return (
@@ -15,7 +16,7 @@ export const ProfilePage = () => {
         </View>
         <View>
           <TouchableOpacity style={styles.logout}>
-            <Text>Log out</Text>
+            <Text style={styles.logoutText}>Log out</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -46,17 +47,17 @@ export const ProfilePage = () => {
       <View style={styles.formGroup}>
         <Text style={styles.label}>Username</Text>
         <TextInput style={styles.input} placeholder="Joseph Wamiti" />
-        <Feather name="edit" size={16} color="#000000" style={styles.editIcon} />
+        <FontAwesome name="pencil" size={16} color="black" style={styles.editIcon}/>
       </View>
       <View style={styles.formGroup}>
         <Text style={styles.label}>Email</Text>
         <TextInput style={styles.input} placeholder="joseph@gmail.com" />
-        <Feather name="edit" size={16} color="#000000" style={styles.editIcon} />
+        <FontAwesome name="pencil" size={16} color="black" style={styles.editIcon}/>
       </View>
       <View style={styles.formGroup}>
         <Text style={styles.label}>Phone</Text>
         <TextInput style={styles.input} placeholder="0705049364" />
-        <Feather name="edit" size={16} color="#000000" style={styles.editIcon} />
+        <FontAwesome name="pencil" size={16} color="black" style={styles.editIcon}/>
       </View>
     </View>
 
@@ -83,7 +84,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFFFFF",
     flex: 1,
     paddingHorizontal: 10,
-    marginTop: 20,
+    marginTop: 25,
   },
   logologout: {
     flexDirection: "row",
@@ -103,18 +104,27 @@ const styles = StyleSheet.create({
     height: 18,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#FF0000",
+    backgroundColor: "white",
     borderRadius: 4,
+    shadowColor: "black", // Shadow color
+    shadowOffset: { width: 2, height: 2 }, // Shadow offset
+    shadowOpacity: 0.2, // Shadow opacity
+    shadowRadius: 3, // Shadow radius
+    elevation: 2, // Elevation (for Android)
+  },  
+  logoutText: {
+    color: "#FF0000",
+
   },
   activeRecord: {
     position: "relative",
     width: 333,
-    height: 60,
+    height: 75,
     left: 0,
     top: 20,
     backgroundColor: "#101010",
     borderRadius: 12,
-    padding: 13,
+    padding: 15,
   },
   activeText: {
     fontWeight: "500",
@@ -124,7 +134,7 @@ const styles = StyleSheet.create({
   },
   activeParagraph: {
    
-    fontSize: 4,
+    fontSize: 6,
     color: "#FFFFFF",
     width: 150,
  
@@ -214,7 +224,7 @@ const styles = StyleSheet.create({
   moreDetails: {
     justifyContent: "center",
     alignItems: "center",
-    marginBottom: 20,
+    marginBottom: 30,
   },
   moreDetailsParagraph: {
     textAlign: "center",

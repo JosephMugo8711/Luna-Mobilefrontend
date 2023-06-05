@@ -2,6 +2,7 @@ import React from 'react';
 import review from "../images/review.jpg";
 import { View, Text, Image, StyleSheet } from 'react-native';
 import { Feather } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons'; 
 
 export const Review = () => {
     return (
@@ -12,7 +13,7 @@ export const Review = () => {
                 <Text  style={styles.writeText}>Review</Text> 
             </Text>
           <View style={styles.arrowContainer}>
-            <Feather name="chevron-right" size={24} color="black" />
+             <AntDesign name="arrowright" size={24} color="black" />
           </View>
           <Image source={review} style={styles.reviewImage} />
         </View>
