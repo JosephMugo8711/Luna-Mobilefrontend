@@ -29,7 +29,7 @@ export const Review = () => {
     reviewContainer: {
       position: 'relative',
       width: 277.12,
-      height: 113,
+      height: 100,
       backgroundColor: '#8CE68A',
       borderRadius: 10.7619,
       flexDirection: 'row',
@@ -44,6 +44,7 @@ export const Review = () => {
       lineHeight: 27,
       color: '#000000',
       marginRight: 10,
+      marginBottom: 18,
     },
     writeText: {
       fontWeight: 'bold',
@@ -56,7 +57,7 @@ export const Review = () => {
     reviewImage: {
       position: 'absolute',
       width: 144.11,
-      height: 73.7,
+      height: 60.7,
       left: 10,
       top: 30,
     },

@@ -149,14 +149,12 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   pictureText: {
-    fontFamily: "Inter",
     fontWeight: "700",
     fontSize: 20,
     lineHeight: 24,
     color: "#000000",
   },
   pictureDescription: {
-    fontFamily: "Inter",
     fontWeight: "400",
     fontSize: 10,
     lineHeight: 12,
@@ -168,7 +166,6 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   changePictureText: {
-    fontFamily: "Inter",
     fontWeight: "700",
     fontSize: 14,
     lineHeight: 17,
@@ -176,7 +173,6 @@ const styles = StyleSheet.create({
     marginRight: 20,
   },
   removeText: {
-    fontFamily: "Inter",
     fontWeight: "700",
     fontSize: 14,
     lineHeight: 17,
@@ -228,11 +224,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 50,
+    marginBottom: 10,
   },
   profileIconContainer: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 20,
+    marginTop: 0,
   },
 });

@@ -33,10 +33,9 @@ export const ProfileIcons = () => {
 const styles = StyleSheet.create({
   profileLinks: {
     flexDirection: "row",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
     alignItems: "center",
     marginTop: 10,
-    backgroundColor: "#D9D9D9",
     borderRadius: 15,
     paddingHorizontal: 20,
     paddingVertical: 10,
@@ -44,6 +43,12 @@ const styles = StyleSheet.create({
   groupIcon: {
     flexDirection: "row",
     alignItems: "center",
+    backgroundColor: "#D9D9D9",
+    flex: 1, // Added flex property to occupy remaining space
+    justifyContent: "space-between", // Added to evenly distribute icons
+    paddingHorizontal: 10, // Added to provide space between icons
+    marginLeft: 15, // Added to provide space between
+    marginRight: 15,
   },
   profileIcon: {
     flexDirection: "row",
@@ -53,7 +58,6 @@ const styles = StyleSheet.create({
     marginRight: 10,
     padding: 5,
   },
-  
   profileIconContainer: {
     alignItems: "center",
   },
@@ -63,7 +67,6 @@ const styles = StyleSheet.create({
     marginTop: 5,
   },
   homeIconContainer: {
-    marginTop: 10,
     alignSelf: "center",
   },
 });
